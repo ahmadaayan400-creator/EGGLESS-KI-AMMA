@@ -1,0 +1,2067 @@
+-- This Script is fucked by aayan papa lua bot deobfuscator personal pc bot 
+insta-aayanzz12_
+
+local v1, v2
+local function tryOperation6()
+    v2.Parent = v1
+end
+local v3, v4
+local function transformValue5(a)
+    local function backgroundTask13()
+        local function tryOperation5()
+            local b = v4
+            local textChatService
+            if v4 then
+                textChatService = Enum.ChatVersion.TextChatService
+                b = v4.ChatVersion == textChatService
+            end
+            local c
+            if b then
+                c = v4:FindFirstChild("TextChannels"):FindFirstChild("RBXGeneral")
+                if c then
+                    c:SendAsync(a)
+                    v3:FindFirstChild("DefaultChatSystemChatEvents"):FindFirstChild("SayMessageRequest"):FireServer(a, "All")
+                    return
+                end
+            end
+            b = v3:FindFirstChild("DefaultChatSystemChatEvents")
+            if b then
+                c = b:FindFirstChild("SayMessageRequest")
+                if c then
+                    c:FireServer(a, "All")
+                    return
+                end
+            end
+        end
+        pcall(tryOperation5)
+    end
+    task.spawn(backgroundTask13)
+    return a
+end
+local function runProtected3(a)
+    local function createSound2()
+        local sound
+        local function backgroundTask12()
+            sound.Ended:Wait()
+            sound:Destroy()
+        end
+        sound = Instance.new("Sound", workspace)
+        sound.SoundId = "rbxassetid://" .. (a or "107406973902030")
+        sound.Volume = 2
+        sound:Play()
+        task.spawn(backgroundTask12)
+    end
+    pcall(createSound2)
+    return a
+end
+local function runProtected4()
+    local function createSound()
+        local sound2
+        local function backgroundTask11()
+            sound2.Ended:Wait()
+            sound2:Destroy()
+        end
+        sound2 = Instance.new("Sound", workspace)
+        sound2.SoundId = "rbxassetid://123071085988261"
+        sound2.Volume = 0.8
+        sound2:Play()
+        task.spawn(backgroundTask11)
+    end
+    pcall(createSound)
+end
+local v5
+local function connectEvents5(a)
+    local b, c, d
+    local function onInputBegan(f)
+        local function onChanged()
+            local h = Enum.UserInputState.End
+            if f.UserInputState == h then
+                b = false
+            end
+        end
+        local mouseButton1 = Enum.UserInputType.MouseButton1
+        local g = f.UserInputType == mouseButton1
+        if not g then
+            mouseButton1 = Enum.UserInputType.Touch
+            g = f.UserInputType == mouseButton1
+        end
+        if g then
+            b = true
+            c = f.Position
+            d = a.Position
+            f.Changed:Connect(onChanged)
+            return f
+        else
+            return
+        end
+    end
+    local e
+    local function onInputChanged(f)
+        local mouseMovement = Enum.UserInputType.MouseMovement
+        local g = f.UserInputType == mouseMovement
+        if not g then
+            mouseMovement = Enum.UserInputType.Touch
+            g = f.UserInputType == mouseMovement
+        end
+        if g then
+            e = f
+        end
+    end
+    local function onInputChanged2(f)
+        local g, scale, h, scale2, i
+        if f == e and b then
+            g = f.Position - c
+            scale = d.X.Scale
+            i = g.X
+            h = d.X.Offset + i
+            scale2 = d.Y.Scale
+            i = d.Y.Offset + g.Y
+            a.Position = UDim2.new(scale, h, scale2, i)
+        end
+    end
+    b = nil
+    e = nil
+    c = nil
+    d = nil
+    a.InputBegan:Connect(onInputBegan)
+    a.InputChanged:Connect(onInputChanged)
+    v5.InputChanged:Connect(onInputChanged2)
+    return a, nil, nil, nil, nil
+end
+local v6
+local function onMouseButton1Click5()
+    v6("107406973902030")
+    v2:Destroy()
+end
+local v7, v8, v9
+local function processItems10()
+    while true do
+        if task.wait(0.5) then
+            v9.TextColor3 = v9.TextColor3 == v7 and v8 or v7
+            continue
+        end
+        break
+    end
+end
+local players, v10, v11, v12, v13, v14, v15, v16, v17
+local function connectEvents6(...)
+    local function processItems()
+        if task.wait(60) then
+            print("\240\159\146\191 SCRIPTED BY ATUL\240\159\146\128\240\159\145\145")
+            while true do
+                if task.wait(60) then
+                    print("\240\159\146\191 SCRIPTED BY ATUL\240\159\146\128\240\159\145\145")
+                    continue
+                end
+                break
+            end
+        end
+    end
+    local w1
+    local function createScrollingFrame()
+        local scrollingFrame = Instance.new("ScrollingFrame", w1)
+        scrollingFrame.Size = UDim2.new(1, 0, 1, 0)
+        scrollingFrame.BackgroundTransparency = 1
+        scrollingFrame.Visible = false
+        scrollingFrame.ScrollBarThickness = 2
+        scrollingFrame.AutomaticCanvasSize = Enum.AutomaticSize.Y
+        scrollingFrame.CanvasSize = UDim2.new(0, 0, 0, 0)
+        scrollingFrame.ScrollBarImageColor3 = v7
+        local uIGridLayout = Instance.new("UIGridLayout", scrollingFrame)
+        uIGridLayout.CellSize = UDim2.new(0.47, 0, 0, 32)
+        uIGridLayout.CellPadding = UDim2.new(0.04, 0, 0.02, 0)
+        return scrollingFrame
+    end
+    local w2
+    local function backgroundTask8()
+        while true do
+            if task.wait() then
+                w2.Color = Color3.fromHSV(0.1766666889190674, 1, 1)
+                continue
+            end
+            break
+        end
+    end
+    local w3, w4
+    local function connectEvents(text, a)
+        local textButton3
+        local function onMouseButton1Click3()
+            v6("107406973902030")
+            local getChildren = w1:GetChildren()
+            local b = next
+            local c = table.pack(next(getChildren, nil))
+            local d, e, f
+            if table.unpack(c, 1, c.n) == nil then
+                a.Visible = true
+                getChildren = w3:GetChildren()
+                c = table.pack(next(getChildren, nil))
+                d = table.unpack(c, 1, c.n)
+                textButton3.TextColor3 = v7
+                if text == "Phonk" then
+                    b = true
+                    w4 = true
+                else
+                    w4 = false
+                    w2.Color = v7
+                    return w2, v7, d, table.unpack(c, 1, c.n)
+                end
+                return b, "Phonk", d, table.unpack(c, 1, c.n)
+            else
+                if table.unpack(c, 2, c.n):IsA("ScrollingFrame") then
+                    table.unpack(c, 2, c.n).Visible = false
+                end
+                f = getChildren
+                d = next
+                if not (d == nil) then
+                    if f:IsA("ScrollingFrame") then
+                        f.Visible = false
+                    end
+                    c = table.pack(b(getChildren, d))
+                    d = table.unpack(c, 1, c.n)
+                    while true do
+                        if table.unpack(c, 2, c.n):IsA("ScrollingFrame") then
+                            table.unpack(c, 2, c.n).Visible = false
+                        end
+                        c = table.pack(b(getChildren, d))
+                        e = table.unpack(c, 1, c.n)
+                        if e ~= nil then
+                            d = e
+                            continue
+                        end
+                        break
+                    end
+                end
+                a.Visible = true
+                getChildren = w3:GetChildren()
+                c = table.pack(pairs(getChildren))
+                table.unpack(c, 1, c.n)
+                getChildren = table.unpack(c, 2, c.n)
+                d = table.unpack(c, 3, c.n)
+                c = table.pack(next(getChildren, d))
+                table.unpack(c, 1, c.n)
+            end
+            if table.unpack(c, 2, c.n):IsA("TextButton") then
+                table.unpack(c, 2, c.n).TextColor3 = v8
+            end
+            for k, v in pairs(getChildren) do
+                if v:IsA("TextButton") then
+                    v.TextColor3 = v8
+                end
+            end
+            d = nil
+            textButton3.TextColor3 = v7
+            if text == "Phonk" then
+                b = true
+                w4 = true
+            else
+                w4 = false
+                w2.Color = v7
+                return w2, v7, d, nil
+            end
+            return b, "Phonk", d, nil
+        end
+        textButton3 = Instance.new("TextButton", w3)
+        textButton3.Size = UDim2.new(1, 0, 0, 26)
+        textButton3.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+        textButton3.Text = text
+        textButton3.TextColor3 = v8
+        textButton3.Font = Enum.Font.GothamBold
+        textButton3.TextSize = 8.5
+        Instance.new("UICorner", textButton3)
+        textButton3.MouseButton1Click:Connect(onMouseButton1Click3)
+        return text, a, textButton3
+    end
+    local function connectEvents2(text, a, b, c)
+        local textButton4
+        local function onMouseButton1Click2()
+            local function tryOperation4()
+                b(textButton4)
+            end
+            v6("107406973902030")
+            if not c then
+                textButton4:SetAttribute("T", not textButton4:GetAttribute("T"))
+                textButton4.BackgroundColor3 = textButton4:GetAttribute("T") and v7 or v8
+                textButton4.TextColor3 = textButton4:GetAttribute("T") and v8 or v14
+            end
+            pcall(tryOperation4)
+        end
+        textButton4 = Instance.new("TextButton", a)
+        local d = c
+        if c then
+            d = v7
+        end
+        if not d then
+            d = v8
+        end
+        textButton4.BackgroundColor3 = d
+        textButton4.Text = text
+        d = c
+        if c then
+            d = v8
+        end
+        if not d then
+            d = v14
+        end
+        textButton4.TextColor3 = d
+        textButton4.Font = Enum.Font.GothamBold
+        textButton4.TextSize = 8.5
+        Instance.new("UICorner", textButton4)
+        textButton4.MouseButton1Click:Connect(onMouseButton1Click2)
+        return text, a, b, c, textButton4
+    end
+    local w5
+    local function backgroundTask9()
+        local function tryOperation3()
+            local getUserIdFromNameAsync = players:GetUserIdFromNameAsync("ff_player1109")
+            local size150x150 = Enum.ThumbnailSize.Size150x150
+            w5.Image = players:GetUserThumbnailAsync(getUserIdFromNameAsync, Enum.ThumbnailType.HeadShot, size150x150)
+        end
+        pcall(tryOperation3)
+    end
+    local w6
+    local function backgroundTask10()
+        local function tryOperation2()
+            local getUserIdFromNameAsync2 = players:GetUserIdFromNameAsync("Nameless82872262")
+            local size150x1502 = Enum.ThumbnailSize.Size150x150
+            w6.Image = players:GetUserThumbnailAsync(getUserIdFromNameAsync2, Enum.ThumbnailType.HeadShot, size150x1502)
+        end
+        pcall(tryOperation2)
+    end
+    local w7
+    local function processItems2()
+        local lower = w7.Text:lower()
+        local getPlayers, a, b, c
+        if not (lower == "") then
+            getPlayers = players:GetPlayers()
+            c = table.pack(next(getPlayers, nil))
+            b = table.unpack(c, 1, c.n)
+            if not (b == nil) then
+                a = b
+                while true do
+                    if not (table.unpack(c, 2, c.n) ~= v12 and table.unpack(c, 2, c.n).Name:lower():find(lower)) then
+                        c = table.pack(next(getPlayers, a))
+                        b = table.unpack(c, 1, c.n)
+                        if b ~= nil then
+                            a = b
+                            continue
+                        end
+                        break
+                    end
+                    return table.unpack(c, 2, c.n)
+                end
+            end
+        end
+        return nil
+    end
+    local function findChild()
+        _G.Loop = false
+        _G.Fly = false
+        if v12.Character and v12.Character:FindFirstChild("Humanoid") then
+            v12.Character.Humanoid.Sit = false
+        end
+        _G.InfJump = false
+    end
+    local w8
+    local function updateState(a)
+        local b = w8()
+        local humanoid
+        if a:GetAttribute("T") and b and b.Character and b.Character:FindFirstChild("Humanoid") then
+            humanoid = b.Character.Humanoid
+            workspace.CurrentCamera.CameraSubject = humanoid
+        end
+    end
+    local function getHumanoidRootPart()
+        local a = w8()
+        local b = a
+        if a then
+            b = a.Character
+        end
+        if b then
+            b = a.Character:FindFirstChild("HumanoidRootPart")
+        end
+        if b then
+            b = v12.Character
+        end
+        if b then
+            b = v12.Character:FindFirstChild("HumanoidRootPart")
+        end
+        local cFrame
+        if b then
+            cFrame = a.Character.HumanoidRootPart.CFrame
+            v12.Character.HumanoidRootPart.CFrame = cFrame
+        end
+    end
+    local function processItems3(a, ...)
+        _G.Loop = a:GetAttribute("T")
+        local b, c
+        if _G.Loop then
+            b = w8()
+            if b and b.Character and b.Character:FindFirstChild("HumanoidRootPart") and v12.Character and v12.Character:FindFirstChild("HumanoidRootPart") then
+                c = b.Character.HumanoidRootPart.CFrame
+                v12.Character.HumanoidRootPart.CFrame = c * CFrame.new(0, 0, 1.1 + math.sin(51000000176.5) * 0.7)
+            end
+            task.wait()
+            b = w8()
+            if b and b.Character and b.Character:FindFirstChild("HumanoidRootPart") and v12.Character and v12.Character:FindFirstChild("HumanoidRootPart") then
+                c = b.Character.HumanoidRootPart.CFrame
+                v12.Character.HumanoidRootPart.CFrame = c * CFrame.new(0, 0, 1.1 + math.sin(tick(select(11, ...)) * 30) * 0.7)
+            end
+            task.wait(select(2, ...))
+            while true do
+                b = _G.Loop
+                if b then
+                    b = w8()
+                    if b and b.Character and b.Character:FindFirstChild("HumanoidRootPart") and v12.Character and v12.Character:FindFirstChild("HumanoidRootPart") then
+                        c = b.Character.HumanoidRootPart.CFrame
+                        v12.Character.HumanoidRootPart.CFrame = c * CFrame.new(0, 0, 1.1 + math.sin(tick(select(11, ...)) * 30) * 0.7)
+                    end
+                    task.wait(select(2, ...))
+                    continue
+                end
+                break
+            end
+            return a, b
+        else
+            return
+        end
+    end
+    local function processItems4(a, ...)
+        _G.Loop = a:GetAttribute("T")
+        local b, c, d, e, f, g
+        if _G.Loop then
+            b = w8()
+            if b and b.Character and b.Character:FindFirstChild("HumanoidRootPart") and v12.Character and v12.Character:FindFirstChild("HumanoidRootPart") then
+                c = v12.Character.HumanoidRootPart
+                d = b.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, -1.1 - math.sin(51000000176.5) * 0.7)
+                g = math.pi
+                c.CFrame = d * CFrame.Angles(0, g, 0)
+            end
+            task.wait()
+            b = w8()
+            if b and b.Character and b.Character:FindFirstChild("HumanoidRootPart") and v12.Character and v12.Character:FindFirstChild("HumanoidRootPart") then
+                c = v12.Character.HumanoidRootPart
+                e = b.Character.HumanoidRootPart.CFrame
+                f = CFrame.new(0, 0, -1.1 - math.sin(tick(select(12, ...)) * 30) * 0.7)
+                g = math.pi
+                c.CFrame = e * f * CFrame.Angles(0, g, 0)
+            end
+            task.wait(select(2, ...))
+            while true do
+                b = _G.Loop
+                if b then
+                    b = w8()
+                    if b and b.Character and b.Character:FindFirstChild("HumanoidRootPart") and v12.Character and v12.Character:FindFirstChild("HumanoidRootPart") then
+                        c = v12.Character.HumanoidRootPart
+                        e = b.Character.HumanoidRootPart.CFrame
+                        f = CFrame.new(0, 0, -1.1 - math.sin(tick(select(12, ...)) * 30) * 0.7)
+                        g = math.pi
+                        c.CFrame = e * f * CFrame.Angles(0, g, 0)
+                    end
+                    task.wait(select(2, ...))
+                    continue
+                end
+                break
+            end
+            return a, b
+        else
+            return
+        end
+    end
+    local function processItems5(a, ...)
+        _G.Loop = a:GetAttribute("T")
+        local b, c
+        if _G.Loop then
+            b = w8()
+            if b and b.Character and b.Character:FindFirstChild("Head") and v12.Character and v12.Character:FindFirstChild("HumanoidRootPart") then
+                c = b.Character.Head.CFrame
+                v12.Character.HumanoidRootPart.CFrame = c * CFrame.new(0, 0.5, 0)
+                v12.Character:FindFirstChild("Humanoid")
+                v12.Character.Humanoid.Sit = true
+            end
+            task.wait()
+            b = w8()
+            if b and b.Character and b.Character:FindFirstChild("Head") and v12.Character and v12.Character:FindFirstChild("HumanoidRootPart") then
+                c = b.Character.Head.CFrame
+                v12.Character.HumanoidRootPart.CFrame = c * CFrame.new(0, 0.5, 0)
+                v12.Character:FindFirstChild("Humanoid")
+                v12.Character.Humanoid.Sit = true
+            end
+            task.wait(select(2, ...))
+            while true do
+                b = _G.Loop
+                if b then
+                    b = w8()
+                    if b and b.Character and b.Character:FindFirstChild("Head") and v12.Character and v12.Character:FindFirstChild("HumanoidRootPart") then
+                        c = b.Character.Head.CFrame
+                        v12.Character.HumanoidRootPart.CFrame = c * CFrame.new(0, 0.5, 0)
+                        v12.Character:FindFirstChild("Humanoid")
+                        v12.Character.Humanoid.Sit = true
+                    end
+                    task.wait(select(2, ...))
+                    continue
+                end
+                break
+            end
+            return a, b
+        else
+            return
+        end
+    end
+    local function processItems6(a, ...)
+        _G.Loop = a:GetAttribute("T")
+        local b, c, d, e
+        if _G.Loop then
+            b = w8()
+            if b and b.Character and b.Character:FindFirstChild("Head") and v12.Character and v12.Character:FindFirstChild("HumanoidRootPart") then
+                c = v12.Character.HumanoidRootPart
+                d = b.Character.Head.CFrame * CFrame.new(0, 0.5, -0.6)
+                e = math.pi
+                c.CFrame = d * CFrame.Angles(0, e, 0)
+                v12.Character:FindFirstChild("Humanoid")
+                v12.Character.Humanoid.Sit = true
+            end
+            task.wait()
+            b = w8()
+            if b and b.Character and b.Character:FindFirstChild("Head") and v12.Character and v12.Character:FindFirstChild("HumanoidRootPart") then
+                c = v12.Character.HumanoidRootPart
+                d = b.Character.Head.CFrame * CFrame.new(0, 0.5, -0.6)
+                e = math.pi
+                c.CFrame = d * CFrame.Angles(0, e, 0)
+                v12.Character:FindFirstChild("Humanoid")
+                v12.Character.Humanoid.Sit = true
+            end
+            task.wait(select(2, ...))
+            while true do
+                b = _G.Loop
+                if b then
+                    b = w8()
+                    if b and b.Character and b.Character:FindFirstChild("Head") and v12.Character and v12.Character:FindFirstChild("HumanoidRootPart") then
+                        c = v12.Character.HumanoidRootPart
+                        d = b.Character.Head.CFrame * CFrame.new(0, 0.5, -0.6)
+                        e = math.pi
+                        c.CFrame = d * CFrame.Angles(0, e, 0)
+                        v12.Character:FindFirstChild("Humanoid")
+                        v12.Character.Humanoid.Sit = true
+                    end
+                    task.wait(select(2, ...))
+                    continue
+                end
+                break
+            end
+            return a, b
+        else
+            return
+        end
+    end
+    local function processItems7(a, ...)
+        _G.Loop = a:GetAttribute("T")
+        local b, c
+        if _G.Loop then
+            b = w8()
+            if b and b.Character and b.Character:FindFirstChild("HumanoidRootPart") and v12.Character and v12.Character:FindFirstChild("HumanoidRootPart") then
+                c = b.Character.HumanoidRootPart.CFrame
+                v12.Character.HumanoidRootPart.CFrame = c * CFrame.new(0, -1.5, 0)
+            end
+            task.wait()
+            b = w8()
+            if b and b.Character and b.Character:FindFirstChild("HumanoidRootPart") and v12.Character and v12.Character:FindFirstChild("HumanoidRootPart") then
+                c = b.Character.HumanoidRootPart.CFrame
+                v12.Character.HumanoidRootPart.CFrame = c * CFrame.new(0, -1.5, 0)
+            end
+            task.wait(select(2, ...))
+            while true do
+                b = _G.Loop
+                if b then
+                    b = w8()
+                    if b and b.Character and b.Character:FindFirstChild("HumanoidRootPart") and v12.Character and v12.Character:FindFirstChild("HumanoidRootPart") then
+                        c = b.Character.HumanoidRootPart.CFrame
+                        v12.Character.HumanoidRootPart.CFrame = c * CFrame.new(0, -1.5, 0)
+                    end
+                    task.wait(select(2, ...))
+                    continue
+                end
+                break
+            end
+            return a, b
+        else
+            return
+        end
+    end
+    local function processItems8(a, ...)
+        _G.Loop = a:GetAttribute("T")
+        local b
+        if _G.Loop then
+            b = w8()
+            if b and b.Character and b.Character:FindFirstChild("HumanoidRootPart") and v12.Character and v12.Character:FindFirstChild("HumanoidRootPart") then
+                v12.Character.HumanoidRootPart.CFrame = b.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1.2, -0.8) * CFrame.Angles(5156.620156177409, 0, 0)
+            end
+            task.wait()
+            b = w8()
+            if b and b.Character and b.Character:FindFirstChild("HumanoidRootPart") and v12.Character and v12.Character:FindFirstChild("HumanoidRootPart") then
+                v12.Character.HumanoidRootPart.CFrame = b.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1.2, -0.8) * CFrame.Angles(5156.620156177409, 0, 0)
+            end
+            task.wait(select(2, ...))
+            while true do
+                b = _G.Loop
+                if b then
+                    b = w8()
+                    if b and b.Character and b.Character:FindFirstChild("HumanoidRootPart") and v12.Character and v12.Character:FindFirstChild("HumanoidRootPart") then
+                        v12.Character.HumanoidRootPart.CFrame = b.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1.2, -0.8) * CFrame.Angles(5156.620156177409, 0, 0)
+                    end
+                    task.wait(select(2, ...))
+                    continue
+                end
+                break
+            end
+            return a, b
+        else
+            return
+        end
+    end
+    local function processItems9(a, ...)
+        _G.Loop = a:GetAttribute("T")
+        local b, c
+        if _G.Loop then
+            b = w8()
+            if b and b.Character and b.Character:FindFirstChild("Head") and v12.Character and v12.Character:FindFirstChild("HumanoidRootPart") then
+                c = b.Character.Head.CFrame
+                v12.Character.HumanoidRootPart.CFrame = c * CFrame.new(math.random(-2, 2), 1, math.random(-2, 2))
+            end
+            task.wait()
+            b = w8()
+            if b and b.Character and b.Character:FindFirstChild("Head") and v12.Character and v12.Character:FindFirstChild("HumanoidRootPart") then
+                c = b.Character.Head.CFrame
+                v12.Character.HumanoidRootPart.CFrame = c * CFrame.new(math.random(-2, 2), 1, math.random(-2, 2))
+            end
+            task.wait(select(2, ...))
+            while true do
+                b = _G.Loop
+                if b then
+                    b = w8()
+                    if b and b.Character and b.Character:FindFirstChild("Head") and v12.Character and v12.Character:FindFirstChild("HumanoidRootPart") then
+                        c = b.Character.Head.CFrame
+                        v12.Character.HumanoidRootPart.CFrame = c * CFrame.new(math.random(-2, 2), 1, math.random(-2, 2))
+                    end
+                    task.wait(select(2, ...))
+                    continue
+                end
+                break
+            end
+            return a, b
+        else
+            return
+        end
+    end
+    local function transformValue(a)
+        local function backgroundTask7()
+            local b
+            if a:GetAttribute("T") then
+                v12.Character:FindFirstChild("HumanoidRootPart")
+                b = v12.Character.HumanoidRootPart
+                if b.Position.Y < -50 then
+                    b.CFrame = CFrame.new(v13)
+                end
+                task.wait(0.1)
+                while true do
+                    if a:GetAttribute("T") then
+                        v12.Character:FindFirstChild("HumanoidRootPart")
+                        b = v12.Character.HumanoidRootPart
+                        if b.Position.Y < -50 then
+                            b.CFrame = CFrame.new(v13)
+                        end
+                        task.wait(0.1)
+                        continue
+                    end
+                    break
+                end
+            end
+        end
+        task.spawn(backgroundTask7)
+        return a
+    end
+    local function executeRemoteScript3()
+        loadstring(game:HttpGet("https://pastebin.com/raw/d4r8JDXz"))
+    end
+    local function transformValue2(a)
+        local function backgroundTask6(...)
+            if a:GetAttribute("T") then
+                v12.Character:FindFirstChild("Humanoid")
+                v12.Character.Humanoid.Sit = false
+                task.wait()
+                v12.Character:FindFirstChild("Humanoid")
+                v12.Character.Humanoid.Sit = false
+                task.wait(select(2, ...))
+                while true do
+                    if a:GetAttribute("T") then
+                        v12.Character:FindFirstChild("Humanoid")
+                        v12.Character.Humanoid.Sit = false
+                        task.wait(select(2, ...))
+                        continue
+                    end
+                    break
+                end
+            end
+        end
+        task.spawn(backgroundTask6)
+        return a
+    end
+    local function runProtected()
+        local function tryOperation()
+            game:GetService("VirtualUser"):ClickButton2(Vector2.new())
+        end
+        pcall(tryOperation)
+    end
+    local function transformValue3(a)
+        local function backgroundTask5(...)
+            local b
+            if a:GetAttribute("T") then
+                v12.Character:FindFirstChild("HumanoidRootPart")
+                b = Vector3.zero
+                v12.Character.HumanoidRootPart.Velocity = b
+                b = Vector3.zero
+                v12.Character.HumanoidRootPart.RotVelocity = b
+                task.wait()
+                v12.Character:FindFirstChild("HumanoidRootPart")
+                b = Vector3.zero
+                v12.Character.HumanoidRootPart.Velocity = b
+                b = Vector3.zero
+                v12.Character.HumanoidRootPart.RotVelocity = b
+                task.wait(select(2, ...))
+                while true do
+                    if a:GetAttribute("T") then
+                        v12.Character:FindFirstChild("HumanoidRootPart")
+                        b = Vector3.zero
+                        v12.Character.HumanoidRootPart.Velocity = b
+                        b = Vector3.zero
+                        v12.Character.HumanoidRootPart.RotVelocity = b
+                        task.wait(select(2, ...))
+                        continue
+                    end
+                    break
+                end
+            end
+        end
+        task.spawn(backgroundTask5)
+        return a
+    end
+    local function executeRemoteScript4()
+        loadstring(game:HttpGet("https://pastefy.app/dnpk7tR5/raw"))
+    end
+    local function executeRemoteScript5()
+        loadstring(game:HttpGet("https://pastebin.com/raw/bAdrcuP8"))
+    end
+    local function executeRemoteScript6()
+        loadstring(game:HttpGet("https://pastebin.com/raw/ZxFSFZs1"))
+    end
+    local function executeRemoteScript7()
+        loadstring(game:HttpGet("https://pastebin.com/raw/U0NdycvQ"))
+    end
+    local function executeRemoteScript8()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/imatul92/Endless-aura-/refs/heads/main/4-word"))
+    end
+    local function executeRemoteScript9()
+        loadstring(game:HttpGet("https://pastebin.com/raw/Gv6RtAmL"))
+    end
+    local function executeRemoteScript10()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/THEBESTLEADERSHIP/ENDLESS-AURA/refs/heads/main/CUSTOM%20SPAMMER"))
+    end
+    local function executeRemoteScript11()
+        loadstring(game:HttpGet("https://pastefy.app/lFjnNicR/raw"))
+    end
+    local function executeRemoteScript12()
+        loadstring(game:HttpGet("https://pastefy.app/zW8xfgZM/raw"))
+    end
+    local function executeRemoteScript13()
+        loadstring(game:HttpGet("https://pastefy.app/5P5uCCAC/raw"))
+    end
+    local function executeRemoteScript14()
+        loadstring(game:HttpGet("https://pastebin.com/raw/m3wpKv3d"))
+    end
+    local function executeRemoteScript15()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/THEBESTLEADERSHIP/ENDLESS-AURA/refs/heads/main/RANDI%20SPAMMER"))
+    end
+    local function executeRemoteScript16()
+        loadstring(game:HttpGet("https://pastefy.app/TvONqPZs/raw"))
+    end
+    local function executeRemoteScript17()
+        loadstring(game:HttpGet("https://pastebin.com/raw/BM0uamrz"))
+    end
+    local function updateState2(a)
+        if v12.Character and v12.Character:FindFirstChild("Humanoid") then
+            v12.Character.Humanoid.WalkSpeed = a:GetAttribute("T") and 300 or 16
+        end
+    end
+    local function getAttribute(a)
+        _G.InfJump = a:GetAttribute("T")
+    end
+    local function performTask()
+        if _G.InfJump and v12.Character and v12.Character:FindFirstChild("Humanoid") then
+            v12.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+        end
+    end
+    local function transformValue4(a)
+        local function backgroundTask4(...)
+            local b
+            if a:GetAttribute("T") then
+                v12.Character:FindFirstChild("HumanoidRootPart")
+                b = v12.Character.HumanoidRootPart
+                b.CFrame = b.CFrame * CFrame.Angles(0, 1145.9155902616465, 0)
+                task.wait()
+                v12.Character:FindFirstChild("HumanoidRootPart")
+                b = v12.Character.HumanoidRootPart
+                b.CFrame = b.CFrame * CFrame.Angles(0, 1145.9155902616465, 0)
+                task.wait(select(2, ...))
+                while true do
+                    if a:GetAttribute("T") then
+                        v12.Character:FindFirstChild("HumanoidRootPart")
+                        b = v12.Character.HumanoidRootPart
+                        b.CFrame = b.CFrame * CFrame.Angles(0, 1145.9155902616465, 0)
+                        task.wait(select(2, ...))
+                        continue
+                    end
+                    break
+                end
+            end
+        end
+        task.spawn(backgroundTask4)
+        return a
+    end
+    local function connectEvents3(a)
+        local function onStepped()
+            local getChildren2
+            if a:GetAttribute("T") and v12.Character then
+                getChildren2 = v12.Character:GetChildren()
+                for k, v in pairs(getChildren2) do
+                    if v:IsA("BasePart") then
+                        v.CanCollide = false
+                    end
+                end
+                return next, getChildren2, nil, nil
+            else
+                return
+            end
+        end
+        v10.Stepped:Connect(onStepped)
+        return a
+    end
+    local function executeRemoteScript18()
+        loadstring(game:HttpGet("https://pastebin.com/raw/tLukyENu"))
+    end
+    local function executeRemoteScript19()
+        loadstring(game:HttpGet("https://pastebin.com/raw/LmxNcQvt"))
+    end
+    local function executeRemoteScript20()
+        loadstring(game:HttpGet("https://pastebin.com/raw/DtJPutfe"))
+    end
+    local function executeRemoteScript21()
+        loadstring(game:HttpGet("https://pastebin.com/raw/7QTTJFFa"))
+    end
+    local function executeRemoteScript22()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-sky-destroyer-V2-AXEZZ-110640"))
+    end
+    local function runProtected2()
+        local function executeRemoteScript2()
+            loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-7yd7-I-Emote-Script-48024"))
+        end
+        pcall(executeRemoteScript2)
+    end
+    local function executeRemoteScript23()
+        loadstring(game:HttpGet("https://pastebin.com/raw/VV3ggiki"))
+    end
+    local function performTask2()
+        v11:Teleport(game.PlaceId, v12)
+    end
+    local function executeRemoteScript24()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/imatul92/Endless-aura-/refs/heads/main/bestbang"))
+    end
+    local function executeRemoteScript25()
+        loadstring(game:HttpGet("https://pastebin.com/raw/gRZJAvD3"))
+    end
+    local function executeRemoteScript26()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/imatul92/Admin-tab/refs/heads/main/MULTI"))
+    end
+    local function executeRemoteScript27()
+        loadstring(game:HttpGet("https://pastebin.com/raw/BM0uamrz"))
+    end
+    local w9, w10
+    local function connectEvents4(text, a)
+        local textButton5
+        local function backgroundTask3()
+            while true do
+                if task.wait() then
+                    textButton5:GetAttribute("Disco")
+                    textButton5.BackgroundColor3 = Color3.fromHSV(0.9416667222976685, 0.8, 1)
+                    continue
+                end
+                break
+            end
+        end
+        local function onMouseButton1Click()
+            local b
+            local function backgroundTask2()
+                b.Ended:Wait()
+                if w10 == a then
+                    textButton5:SetAttribute("Disco", false)
+                    w10 = nil
+                    b:Destroy()
+                end
+            end
+            b = v6
+            v6("107406973902030")
+            b = w10
+            local c, d, e, f, g, h, i, j, k
+            if b == a then
+                b = pairs
+                c = workspace:GetChildren()
+                b = next
+                k = table.pack(next(c, nil))
+                e = table.unpack(k, 1, k.n)
+                if not (e == nil) then
+                    d = e
+                    while true do
+                        i = "Sound"
+                        g = table.unpack(k, 2, k.n):IsA("Sound")
+                        if g then
+                            i = "PhonkSound"
+                            g = table.unpack(k, 2, k.n).Name == "PhonkSound"
+                        end
+                        if not g then
+                            k = table.pack(next(c, d))
+                            e = table.unpack(k, 1, k.n)
+                            if e ~= nil then
+                                d = e
+                                continue
+                            end
+                            break
+                        end
+                        f = table.unpack(k, 2, k.n)
+                        h = f
+                        g = f.Destroy
+                        g(f)
+                        local __cont1 = false
+                        while true do
+                            k = table.pack(b(c, d))
+                            e = table.unpack(k, 1, k.n)
+                            if not (e == nil) then
+                                d = e
+                                while true do
+                                    i = "Sound"
+                                    f = table.unpack(k, 2, k.n)
+                                    h = f
+                                    g = f:IsA("Sound")
+                                    if g then
+                                        f = table.unpack(k, 2, k.n)
+                                        h = f.Name
+                                        i = "PhonkSound"
+                                        g = h == "PhonkSound"
+                                    end
+                                    if g then
+                                        f = table.unpack(k, 2, k.n)
+                                        h = f
+                                        g = f.Destroy
+                                        g(f)
+                                        __cont1 = true
+                                        break
+                                    else
+                                        k = table.pack(b(c, d))
+                                        e = table.unpack(k, 1, k.n)
+                                        if e == nil then
+                                            break
+                                        else
+                                            d = e
+                                        end
+                                    end
+                                end
+                                if __cont1 then
+                                    __cont1 = false
+                                    continue
+                                end
+                                break
+                            end
+                            b = pairs
+                            c = w9:GetChildren()
+                            k = table.pack(b(c))
+                            b = table.unpack(k, 1, k.n)
+                            c = table.unpack(k, 2, k.n)
+                            b = b
+                            d = table.unpack(k, 3, k.n)
+                            k = table.pack(b(c, d))
+                            e = table.unpack(k, 1, k.n)
+                            if not (e == nil) then
+                                d = e
+                                while true do
+                                    if table.unpack(k, 2, k.n):IsA("TextButton") then
+                                        table.unpack(k, 2, k.n):SetAttribute("Disco", false)
+                                        k = table.pack(b(c, d))
+                                        e = table.unpack(k, 1, k.n)
+                                        if e == nil then
+                                            d = e
+                                        else
+                                            d = e
+                                            continue
+                                        end
+                                    else
+                                        k = table.pack(b(c, d))
+                                        e = table.unpack(k, 1, k.n)
+                                        if e == nil then
+                                            break
+                                        else
+                                            d = e
+                                            continue
+                                        end
+                                    end
+                                    b = nil
+                                    w10 = nil
+                                    return nil, c, d, table.unpack(k, 1, k.n)
+                                end
+                            end
+                            b = nil
+                            w10 = nil
+                            return nil, c, e, table.unpack(k, 1, k.n)
+                        end
+                        d = e
+                        b = pairs
+                        c = w9
+                        goto __x21
+                    end
+                end
+                b = pairs
+                c = w9:GetChildren()
+                b = next
+                k = table.pack(next(c, nil))
+                e = table.unpack(k, 1, k.n)
+                if e == nil then
+                    b = nil
+                    w10 = nil
+                    return nil, c, e, table.unpack(k, 1, k.n)
+                else
+                    d = e
+                    if table.unpack(k, 2, k.n):IsA("TextButton") then
+                        table.unpack(k, 2, k.n):SetAttribute("Disco", false)
+                        local __cont5 = false
+                        while true do
+                            k = table.pack(b(c, d))
+                            e = table.unpack(k, 1, k.n)
+                            if e == nil then
+                                b = nil
+                                w10 = nil
+                                return b, c, e, table.unpack(k, 1, k.n)
+                            else
+                                d = e
+                                while true do
+                                    if table.unpack(k, 2, k.n):IsA("TextButton") then
+                                        table.unpack(k, 2, k.n):SetAttribute("Disco", false)
+                                        __cont5 = true
+                                        break
+                                    else
+                                        k = table.pack(b(c, d))
+                                        e = table.unpack(k, 1, k.n)
+                                        if e == nil then
+                                            break
+                                        else
+                                            d = e
+                                        end
+                                    end
+                                end
+                                if __cont5 then
+                                    __cont5 = false
+                                    continue
+                                end
+                                break
+                            end
+                        end
+                        b = nil
+                        w10 = nil
+                        return b, c, e, table.unpack(k, 1, k.n)
+                    else
+                        k = table.pack(b(c, d))
+                        d = table.unpack(k, 1, k.n)
+                    end
+                end
+            else
+                b = pairs
+                c = workspace:GetChildren()
+                k = table.pack(next(c))
+                b = table.unpack(k, 1, k.n)
+                c = table.unpack(k, 2, k.n)
+                b = b
+                d = table.unpack(k, 3, k.n)
+                k = table.pack(next(c, d))
+                e = table.unpack(k, 1, k.n)
+                if e == nil then
+                    b = pairs
+                    c = w9:GetChildren()
+                    k = table.pack(next(c))
+                    b = table.unpack(k, 1, k.n)
+                    c = table.unpack(k, 2, k.n)
+                    b = b
+                    d = table.unpack(k, 3, k.n)
+                    k = table.pack(next(c, d))
+                    table.unpack(k, 1, k.n)
+                    b = textButton5
+                    d = "Disco"
+                    e = true
+                else
+                    d = e
+                    i = "Sound"
+                    f = table.unpack(k, 2, k.n)
+                    h = f
+                    g = f:IsA("Sound")
+                    if g then
+                        f = table.unpack(k, 2, k.n)
+                        h = f.Name
+                        i = "PhonkSound"
+                        g = h == "PhonkSound"
+                    end
+                    if g then
+                        f = table.unpack(k, 2, k.n)
+                        h = f
+                        g = f.Destroy
+                        g(f)
+                        local __cont15 = false
+                        while true do
+                            k = table.pack(b(c, d))
+                            e = table.unpack(k, 1, k.n)
+                            if not (e == nil) then
+                                d = e
+                                while true do
+                                    i = "Sound"
+                                    f = table.unpack(k, 2, k.n)
+                                    h = f
+                                    g = f:IsA("Sound")
+                                    if g then
+                                        f = table.unpack(k, 2, k.n)
+                                        h = f.Name
+                                        i = "PhonkSound"
+                                        g = h == "PhonkSound"
+                                    end
+                                    if g then
+                                        f = table.unpack(k, 2, k.n)
+                                        h = f
+                                        g = f.Destroy
+                                        g(f)
+                                        __cont15 = true
+                                        break
+                                    else
+                                        k = table.pack(b(c, d))
+                                        e = table.unpack(k, 1, k.n)
+                                        if e == nil then
+                                            break
+                                        else
+                                            d = e
+                                        end
+                                    end
+                                end
+                                if __cont15 then
+                                    __cont15 = false
+                                    continue
+                                end
+                                break
+                            end
+                            break
+                        end
+                    else
+                        k = table.pack(b(c, d))
+                        e = table.unpack(k, 1, k.n)
+                        d = e
+                        while true do
+                            i = "Sound"
+                            f = table.unpack(k, 2, k.n)
+                            h = f
+                            g = f:IsA("Sound")
+                            if g then
+                                f = table.unpack(k, 2, k.n)
+                                h = f.Name
+                                i = "PhonkSound"
+                                g = h == "PhonkSound"
+                            end
+                            if g then
+                                f = table.unpack(k, 2, k.n)
+                                h = f
+                                g = f.Destroy
+                                g(f)
+                                k = table.pack(b(c, d))
+                                e = table.unpack(k, 1, k.n)
+                                if e == nil then
+                                    d = e
+                                    goto __x26
+                                else
+                                    d = e
+                                end
+                            else
+                                k = table.pack(b(c, d))
+                                e = table.unpack(k, 1, k.n)
+                                if e == nil then
+                                    break
+                                else
+                                    d = e
+                                end
+                            end
+                        end
+                        d = e
+                        goto __x26
+                    end
+                    b = pairs
+                    c = w9:GetChildren()
+                    b = next
+                    k = table.pack(next(c, nil))
+                    e = table.unpack(k, 1, k.n)
+                    d = e
+                    goto __x19
+                end
+                c = b
+                b = b.SetAttribute
+                b(c, d, e)
+                b = Instance.new("Sound", workspace)
+                b.Name = "PhonkSound"
+                b.SoundId = "rbxassetid://" .. a
+                b.Volume = 3
+                b:Play()
+                w10 = a
+                task.spawn(backgroundTask2)
+                return b
+            end
+            ::__x7::
+            i = "TextButton"
+            f = table.unpack(k, 2, k.n)
+            h = f
+            g = f.IsA(h, i)
+            if g then
+                i = "Disco"
+                j = false
+                f = table.unpack(k, 2, k.n)
+                h = f
+                g = f.SetAttribute
+                g(h, i, j)
+            end
+            k = table.pack(b(c, d))
+            e = table.unpack(k, 1, k.n)
+            if e == nil then
+                b = nil
+                w10 = nil
+                return b, c, e, table.unpack(k, 1, k.n)
+            else
+                d = e
+                goto __x7
+            end
+            ::__x11::
+            b = textButton5
+            c = b
+            b = b.SetAttribute
+            b(c, "Disco", true)
+            b = Instance.new
+            b = b("Sound", workspace)
+            b.Name = "PhonkSound"
+            e = a
+            b.SoundId = "rbxassetid://" .. e
+            b.Volume = 3
+            b:Play()
+            w10 = e
+            task.spawn(backgroundTask2)
+            do
+                return b
+            end
+            ::__x19::
+            i = "TextButton"
+            f = table.unpack(k, 2, k.n)
+            h = f
+            g = f.IsA(h, i)
+            if g then
+                i = "Disco"
+                j = false
+                f = table.unpack(k, 2, k.n)
+                h = f
+                g = f.SetAttribute
+                g(h, i, j)
+            end
+            k = table.pack(b(c, d))
+            e = table.unpack(k, 1, k.n)
+            if e == nil then
+                d = e
+                goto __x11
+            else
+                d = e
+                goto __x19
+            end
+            ::__x21::
+            d = c
+            c = c.GetChildren
+            c = c(d)
+            k = table.pack(b(c))
+            b = table.unpack(k, 1, k.n)
+            c = table.unpack(k, 2, k.n)
+            b = b
+            d = table.unpack(k, 3, k.n)
+            k = table.pack(b(c, d))
+            e = table.unpack(k, 1, k.n)
+            if e == nil then
+                b = nil
+                w10 = nil
+                return b, c, e, table.unpack(k, 1, k.n)
+            else
+                d = e
+                goto __x7
+            end
+            ::__x26::
+            b = pairs
+            c = w9
+            d = c
+            c = c.GetChildren
+            c = c(d)
+            b = next
+            b = b
+            k = table.pack(b(c, nil))
+            e = table.unpack(k, 1, k.n)
+            if e == nil then
+                d = e
+                goto __x11
+            else
+                d = e
+                goto __x19
+            end
+        end
+        textButton5 = Instance.new("TextButton", w9)
+        textButton5.BackgroundColor3 = v8
+        textButton5.Text = text
+        textButton5.TextColor3 = v14
+        textButton5.Font = Enum.Font.GothamBold
+        textButton5.TextSize = 10
+        Instance.new("UICorner", textButton5)
+        task.spawn(backgroundTask3)
+        textButton5.MouseButton1Click:Connect(onMouseButton1Click)
+        return text, a, textButton5
+    end
+    local w11, w12
+    local function onHeartbeat()
+        local a, b, adminLogs, c, d, e
+        if w11.Visible then
+            b = next
+            adminLogs = _G.AdminLogs
+            e = table.pack(next(adminLogs, nil))
+            d = table.unpack(e, 1, e.n)
+            if d == nil then
+                w12.Text = "[ MASTER ADMIN ACCESS ]\n--- ACTIVE USERS ---\n"
+                return "[ MASTER ADMIN ACCESS ]\n--- ACTIVE USERS ---\n", w12, adminLogs, d, table.unpack(e, 1, e.n)
+            else
+                a = "[ MASTER ADMIN ACCESS ]\n--- ACTIVE USERS ---\n" .. "> " .. table.unpack(e, 2, e.n) .. "\n"
+                e = table.pack(b(adminLogs, d))
+                d = table.unpack(e, 1, e.n)
+                c = d
+                while true do
+                    a = a .. "> " .. table.unpack(e, 2, e.n) .. "\n"
+                    e = table.pack(b(adminLogs, c))
+                    d = table.unpack(e, 1, e.n)
+                    if d ~= nil then
+                        c = d
+                        continue
+                    end
+                    break
+                end
+                w12.Text = a
+                return a, w12, adminLogs, d, table.unpack(e, 1, e.n)
+            end
+        else
+            return
+        end
+    end
+    local w13
+    local function onMouseButton1Click4()
+        v6("107406973902030")
+        local a = w13
+        a.Visible = not a.Visible
+    end
+    w13 = " (" .. v12.UserId .. ")"
+    local w14 = v12.Name .. w13
+    local w15 = false
+    w13 = next
+    w2 = _G.AdminLogs
+    local pack = table.pack(next(w2, nil))
+    local unpack = table.unpack(pack, 1, pack.n)
+    local w16, frame2
+    if unpack == nil then
+        w13 = table.insert
+        w2 = _G.AdminLogs
+        w13(w2, w14)
+    else
+        w16 = unpack
+        if table.unpack(pack, 2, pack.n) == w14 then
+            w15 = true
+        else
+            pack = table.pack(w13(w2, w16))
+            w16 = table.unpack(pack, 1, pack.n)
+            while true do
+                if table.unpack(pack, 2, pack.n) == w14 then
+                    w15 = true
+                else
+                    pack = table.pack(w13(w2, w16))
+                    unpack = table.unpack(pack, 1, pack.n)
+                    if unpack == nil then
+                        break
+                    else
+                        w16 = unpack
+                        continue
+                    end
+                end
+                break
+            end
+            w13 = not w15
+            if w13 then
+                w13 = table.insert
+                w2 = _G.AdminLogs
+                w13(w2, w14)
+            end
+        end
+    end
+    w13 = v16
+    w2 = "HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA"
+    v16("HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA-HA")
+    w13 = task.wait
+    w2 = 1
+    w13(1)
+    w13 = v16
+    w2 = "SCRIPT BY LORD ATUL \240\159\146\162\240\159\145\145\240\159\146\128> THE MOST DANGEROUS PLAYER ATUL\240\159\146\128/UNBEATABLE GOD\240\159\145\145//NO.1 ENDLESS AURA \240\159\145\145/ PARTH KA PAPA EA ATUL\240\159\146\128/ENDLESS AURA ALWAYS COME BACK...\240\159\145\145\240\159\146\128\240\159\146\162"
+    v16("SCRIPT BY LORD ATUL \240\159\146\162\240\159\145\145\240\159\146\128> THE MOST DANGEROUS PLAYER ATUL\240\159\146\128/UNBEATABLE GOD\240\159\145\145//NO.1 ENDLESS AURA \240\159\145\145/ PARTH KA PAPA EA ATUL\240\159\146\128/ENDLESS AURA ALWAYS COME BACK...\240\159\145\145\240\159\146\128\240\159\146\162")
+    w13 = task.wait
+    w2 = 1
+    w13(1)
+    w13 = v16
+    w2 = "SCRIPT BY NAMELESS X ATUL \240\159\145\145> @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@>EGO EMPIRE KA PAPA ENDLESS AURA Loaded...\240\159\146\162"
+    v16("SCRIPT BY NAMELESS X ATUL \240\159\145\145> @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@>EGO EMPIRE KA PAPA ENDLESS AURA Loaded...\240\159\146\162")
+    w13 = task.spawn
+    w2 = processItems
+    w13(processItems)
+    w2 = "Frame"
+    w13 = Instance.new("Frame", v2)
+    w3 = 300
+    w13.Size = UDim2.new(0, 420, 0, 300)
+    w3 = -150
+    w13.Position = UDim2.new(0.5, -210, 0.5, -150)
+    w13.BackgroundColor3 = v14
+    w13.BackgroundTransparency = 0.4
+    w2 = v17
+    v17(w13)
+    w2 = Instance.new
+    w2("UICorner", w13)
+    w2 = Instance.new("UIStroke", w13)
+    w2.Thickness = 2
+    w2.Color = v7
+    w16 = Instance.new("ImageLabel", w13)
+    w3 = 28
+    w1 = 28
+    w16.Size = UDim2.new(0, 28, 0, 28)
+    w3 = 10
+    w1 = 6
+    w16.Position = UDim2.new(0, 10, 0, 6)
+    w16.BackgroundTransparency = 1
+    w16.Image = "rbxassetid://129299711445020"
+    w3 = w13
+    unpack = Instance.new("TextLabel", w13)
+    w3 = 0
+    w1 = 0
+    unpack.Size = UDim2.new(0, 200, 0, 28)
+    w3 = 0
+    w1 = 0
+    unpack.Position = UDim2.new(0, 43, 0, 5)
+    unpack.BackgroundTransparency = 1
+    unpack.Text = "E\201\180\225\180\133\202\159\225\180\135ss A\225\180\156\202\128\225\180\128"
+    unpack.TextColor3 = v7
+    unpack.TextSize = 20
+    unpack.Font = Enum.Font.GothamBlack
+    unpack.TextXAlignment = Enum.TextXAlignment.Left
+    w3 = "Frame"
+    frame2 = Instance.new("Frame", w13)
+    w1 = -20
+    frame2.Size = UDim2.new(1, -20, 0, 2)
+    w1 = 10
+    frame2.Position = UDim2.new(0, 10, 0, 38)
+    frame2.BackgroundColor3 = v7
+    frame2.BorderSizePixel = 0
+    w1 = w13
+    w3 = Instance.new("Frame", w13)
+    w1 = 0
+    w3.Size = UDim2.new(0, 95, 1, -50)
+    w1 = 0
+    w3.Position = UDim2.new(0, 10, 0, 45)
+    w3.BackgroundTransparency = 1
+    w1 = "UIListLayout"
+    local uIListLayout = Instance.new("UIListLayout", w3)
+    uIListLayout.Padding = UDim.new(0, 4)
+    w1 = Instance.new("Frame", w13)
+    w1.Size = UDim2.new(1, -125, 1, -50)
+    w1.Position = UDim2.new(0, 115, 0, 45)
+    w1.BackgroundTransparency = 1
+    local w17 = createScrollingFrame(select(19, ...))
+    local w18 = createScrollingFrame(select(19, ...))
+    local w19 = createScrollingFrame(select(19, ...))
+    local w20 = createScrollingFrame(select(19, ...))
+    local w21 = createScrollingFrame(select(19, ...))
+    local w22 = createScrollingFrame(select(19, ...))
+    w9 = createScrollingFrame(select(19, ...))
+    w4 = createScrollingFrame(select(19, ...))
+    local w23 = w4
+    w11 = createScrollingFrame(select(18, ...))
+    w4 = w17.UIGridLayout
+    local w24 = w4
+    w4 = w4.Destroy
+    w4(w24)
+    w4 = w18.UIGridLayout
+    w24 = w4
+    w4 = w4.Destroy
+    w4(w24)
+    w4 = false
+    task.spawn(backgroundTask8)
+    w24 = connectEvents
+    connectEvents("\240\159\146\162CREATOR \240\159\146\128", w17)
+    connectEvents("\240\159\145\145 INFO", w18)
+    connectEvents("\240\159\140\154 TROLL", w19)
+    connectEvents("\240\159\155\161\239\184\143 SHIELD", w20)
+    connectEvents("\240\159\145\186 SPAM", w21)
+    connectEvents("Phonk", w9)
+    connectEvents("\226\154\161PANELS \226\152\160\239\184\143", w23)
+    connectEvents("\240\159\147\129 OTHER", w22)
+    if v12.Name == "ff_player1109" then
+        w24("\240\159\155\161\239\184\143 ADMIN", w11)
+    end
+    w17.Visible = true
+    local imageLabel2 = Instance.new("ImageLabel", w17)
+    w5 = 0
+    imageLabel2.Size = UDim2.new(0, 55, 0, 55)
+    w5 = 0
+    imageLabel2.Position = UDim2.new(0.5, -27.5, 0, 8)
+    imageLabel2.BackgroundTransparency = 1
+    imageLabel2.Image = "rbxassetid://129299711445020"
+    local frame3 = Instance.new("Frame", w17)
+    w5 = -10
+    frame3.Size = UDim2.new(1, -10, 0, 95)
+    w5 = 5
+    frame3.Position = UDim2.new(0, 5, 0, 75)
+    w5 = 15
+    frame3.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+    frame3.BackgroundTransparency = 0.25
+    frame3.BorderSizePixel = 0
+    w5 = frame3
+    w5 = 0
+    Instance.new("UICorner", frame3).CornerRadius = UDim.new(0, 8)
+    w5 = frame3
+    local uIStroke2 = Instance.new("UIStroke", frame3)
+    uIStroke2.Color = v7
+    uIStroke2.Thickness = 1.5
+    w5 = "TextLabel"
+    local textLabel3 = Instance.new("TextLabel", frame3)
+    textLabel3.Size = UDim2.new(1, 0, 0, 22)
+    textLabel3.Position = UDim2.new(0, 0, 0, 4)
+    textLabel3.BackgroundTransparency = 1
+    textLabel3.Text = "\240\159\145\145 OWNER \240\159\146\162"
+    textLabel3.TextColor3 = Color3.fromRGB(255, 215, 0)
+    textLabel3.TextSize = 14
+    textLabel3.Font = Enum.Font.GothamBlack
+    w5 = Instance.new("ImageLabel", frame3)
+    w6 = 48
+    w5.Size = UDim2.new(0, 48, 0, 48)
+    w6 = 32
+    w5.Position = UDim2.new(0, 12, 0, 32)
+    w5.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+    w5.BorderSizePixel = 0
+    Instance.new("UICorner", w5).CornerRadius = UDim.new(1, 0)
+    task.spawn(backgroundTask9)
+    local textLabel4 = Instance.new("TextLabel", frame3)
+    w6 = 0
+    textLabel4.Size = UDim2.new(0, 180, 0, 48)
+    w6 = 0
+    textLabel4.Position = UDim2.new(0, 70, 0, 32)
+    textLabel4.BackgroundTransparency = 1
+    textLabel4.Text = "ff_player1109"
+    textLabel4.TextColor3 = v8
+    textLabel4.TextSize = 15
+    textLabel4.Font = Enum.Font.GothamBold
+    textLabel4.TextXAlignment = Enum.TextXAlignment.Left
+    textLabel4.TextYAlignment = Enum.TextYAlignment.Center
+    local frame4 = Instance.new("Frame", w17)
+    w6 = -10
+    frame4.Size = UDim2.new(1, -10, 0, 95)
+    w6 = 5
+    frame4.Position = UDim2.new(0, 5, 0, 180)
+    w6 = 15
+    frame4.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+    frame4.BackgroundTransparency = 0.25
+    frame4.BorderSizePixel = 0
+    w6 = frame4
+    w6 = 0
+    Instance.new("UICorner", frame4).CornerRadius = UDim.new(0, 8)
+    w6 = frame4
+    local uIStroke3 = Instance.new("UIStroke", frame4)
+    uIStroke3.Color = v7
+    uIStroke3.Thickness = 1.5
+    w6 = "TextLabel"
+    local textLabel5 = Instance.new("TextLabel", frame4)
+    w7 = 22
+    textLabel5.Size = UDim2.new(1, 0, 0, 22)
+    w7 = 4
+    textLabel5.Position = UDim2.new(0, 0, 0, 4)
+    textLabel5.BackgroundTransparency = 1
+    textLabel5.Text = "\240\159\145\145 OWNER \240\159\146\162"
+    textLabel5.TextColor3 = Color3.fromRGB(255, 215, 0)
+    textLabel5.TextSize = 14
+    textLabel5.Font = Enum.Font.GothamBlack
+    w6 = Instance.new("ImageLabel", frame4)
+    w7 = 0
+    w8 = 48
+    w6.Size = UDim2.new(0, 48, 0, 48)
+    w7 = 0
+    w8 = 32
+    w6.Position = UDim2.new(0, 12, 0, 32)
+    w7 = 30
+    w6.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+    w6.BorderSizePixel = 0
+    w7 = 0
+    Instance.new("UICorner", w6).CornerRadius = UDim.new(1, 0)
+    task.spawn(backgroundTask10)
+    local textLabel6 = Instance.new("TextLabel", frame4)
+    w7 = 180
+    w8 = 0
+    w10 = 48
+    textLabel6.Size = UDim2.new(0, 180, 0, 48)
+    w7 = 70
+    w8 = 0
+    w10 = 32
+    textLabel6.Position = UDim2.new(0, 70, 0, 32)
+    textLabel6.BackgroundTransparency = 1
+    textLabel6.Text = "Nameless82872262"
+    textLabel6.TextColor3 = v8
+    textLabel6.TextSize = 15
+    textLabel6.Font = Enum.Font.GothamBold
+    textLabel6.TextXAlignment = Enum.TextXAlignment.Left
+    textLabel6.TextYAlignment = Enum.TextYAlignment.Center
+    w7 = w18
+    local imageLabel3 = Instance.new("ImageLabel", w18)
+    w7 = 0
+    w8 = 65
+    w10 = 0
+    imageLabel3.Size = UDim2.new(0, 65, 0, 65)
+    w7 = 0.5
+    w8 = -32.5
+    w10 = 0
+    imageLabel3.Position = UDim2.new(0.5, -32.5, 0, 5)
+    imageLabel3.BackgroundTransparency = 1
+    imageLabel3.Image = "rbxassetid://129299711445020"
+    w7 = "TextLabel"
+    w8 = w18
+    local textLabel7 = Instance.new("TextLabel", w18)
+    w8 = 1
+    w10 = 0
+    w12 = -75
+    textLabel7.Size = UDim2.new(1, 0, 1, -75)
+    w8 = 0
+    w10 = 0
+    w12 = 75
+    textLabel7.Position = UDim2.new(0, 0, 0, 75)
+    textLabel7.BackgroundTransparency = 1
+    textLabel7.TextColor3 = v8
+    textLabel7.TextSize = 10
+    w8 = Enum.Font
+    w7 = w8.GothamBold
+    textLabel7.Font = w7
+    w8 = Enum.TextXAlignment
+    w7 = w8.Left
+    textLabel7.TextXAlignment = w7
+    w8 = Enum.TextYAlignment
+    textLabel7.TextYAlignment = w8.Top
+    textLabel7.Text = "SCRIPT NAME - ENDLESS AURA\n__________________________________________\nSCRIPT BY: ATUL\240\159\145\145\240\159\146\128\nROBLOX  ID: ff_player1109\n\nFAMOUS FATHER: ATUL \240\159\146\128\nTHE-LEADER OF [ENDLESS AURA]\nTHIS SCRIPT ONLY FOR ENDLESS AURA FAMILY \240\159\145\145\240\159\146\157\n__________________________________________\nOR SABSE ACHI BAAT RND EMPIRE APNA BETA HAI"
+    w8 = "TextBox"
+    w10 = w19
+    w7 = Instance.new("TextBox", w19)
+    w10 = 0.98
+    w12 = 0
+    w7.Size = UDim2.new(0.98, 0, 0, 30)
+    w7.PlaceholderText = "TARGET NAME..."
+    w10 = 20
+    w12 = 20
+    w7.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+    w7.TextColor3 = v8
+    w8 = Instance.new
+    w10 = "UICorner"
+    w8("UICorner", w7)
+    w8 = processItems2
+    w10 = connectEvents2
+    w12 = w19
+    connectEvents2("\240\159\155\145 Stop All", w19, findChild, true)
+    w10 = connectEvents2
+    w12 = w19
+    connectEvents2("\240\159\145\129\239\184\143 View", w19, updateState)
+    w10 = connectEvents2
+    w12 = w19
+    connectEvents2("\240\159\154\128 Goto", w19, getHumanoidRootPart, true)
+    w10 = connectEvents2
+    w12 = w19
+    connectEvents2("\240\159\141\134 Bang", w19, processItems3)
+    w10 = connectEvents2
+    w12 = w19
+    connectEvents2("\240\159\141\145 Front Bang", w19, processItems4)
+    w10 = connectEvents2
+    w12 = w19
+    connectEvents2("\240\159\167\146 Headsit", w19, processItems5)
+    w10 = connectEvents2
+    w12 = w19
+    connectEvents2("\240\159\166\146 Front Headsit", w19, processItems6)
+    w10 = connectEvents2
+    w12 = w19
+    connectEvents2("\226\172\135\239\184\143 Down", w19, processItems7)
+    w10 = connectEvents2
+    w12 = w19
+    connectEvents2("\240\159\145\133 Suck", w19, processItems8)
+    w10 = connectEvents2
+    w12 = w19
+    connectEvents2("\240\159\166\159 Moskito Annoy", w19, processItems9)
+    w10 = connectEvents2
+    w12 = w20
+    connectEvents2("\240\159\155\161\239\184\143 Anti Void", w20, transformValue)
+    w10 = connectEvents2
+    w12 = w20
+    connectEvents2("ANTI BANG\240\159\155\161\239\184\143", w20, executeRemoteScript3, true)
+    w10 = connectEvents2
+    w12 = w20
+    connectEvents2("\240\159\155\161\239\184\143 Anti Sit", w20, transformValue2)
+    w10 = connectEvents2
+    w12 = w20
+    connectEvents2("\240\159\155\161\239\184\143 Anti AFK", w20, runProtected, true)
+    w10 = connectEvents2
+    w12 = w20
+    connectEvents2("\240\159\155\161\239\184\143 Anti Fling", w20, transformValue3)
+    w10 = connectEvents2
+    w12 = w21
+    connectEvents2("ATUL SPAMMER\240\159\150\164", w21, executeRemoteScript4, true)
+    w10 = connectEvents2
+    w12 = w21
+    connectEvents2("NAMELESS SPAMMER\240\159\146\162", w21, executeRemoteScript5, true)
+    w10 = connectEvents2
+    w12 = w21
+    connectEvents2("3-TARGET SPAMMER \240\159\140\170\239\184\143", w21, executeRemoteScript6, true)
+    w10 = connectEvents2
+    w12 = w21
+    connectEvents2("\240\159\142\181 Music Spammer", w21, executeRemoteScript7, true)
+    w10 = connectEvents2
+    w12 = w21
+    connectEvents2("\240\159\147\162 Custome Ward Spammer", w21, executeRemoteScript8, true)
+    w10 = connectEvents2
+    w12 = w21
+    connectEvents2("\240\159\146\128 @ Spammer", w21, executeRemoteScript9, true)
+    w10 = connectEvents2
+    w12 = w21
+    connectEvents2("CUSTOM SPAMMER\240\159\146\162", w21, executeRemoteScript10, true)
+    w10 = connectEvents2
+    w12 = w21
+    connectEvents2("3 TARGET OWNER\240\159\148\165", w21, executeRemoteScript11, true)
+    w10 = connectEvents2
+    w12 = w21
+    connectEvents2("NEW PATTERN SPAMMER \226\153\160", w21, executeRemoteScript12, true)
+    w10 = connectEvents2
+    w12 = w21
+    connectEvents2("RANDI SPAMMER 1\226\157\140\226\156\133", w21, executeRemoteScript13, true)
+    w10 = connectEvents2
+    w12 = w21
+    connectEvents2("JHATU EMPIRE SPAM\240\159\152\130", w21, executeRemoteScript14, true)
+    w10 = connectEvents2
+    w12 = w21
+    connectEvents2("RANDI SPAM 2\240\159\152\130", w21, executeRemoteScript15, true)
+    w10 = connectEvents2
+    w12 = w22
+    connectEvents2("ADMIN BANG ", w22, executeRemoteScript16, true)
+    w10 = connectEvents2
+    w12 = w22
+    connectEvents2("ANTIBANG PANEL \240\159\146\128\240\159\155\161\239\184\143", w22, executeRemoteScript17, true)
+    w10 = connectEvents2
+    w12 = w22
+    connectEvents2("\226\154\161 Speed 300", w22, updateState2)
+    w10 = connectEvents2
+    w12 = w22
+    connectEvents2("\240\159\134\153 Fly Jump", w22, getAttribute)
+    w10 = v5.JumpRequest
+    w12 = performTask
+    local w25 = w10
+    w10 = w10.Connect
+    w10(w25, performTask)
+    w10 = connectEvents2
+    w12 = w22
+    connectEvents2("\240\159\140\128 Spin 300", w22, transformValue4)
+    w10 = connectEvents2
+    w12 = w22
+    connectEvents2("\240\159\145\187 Noclip", w22, connectEvents3)
+    w10 = connectEvents2
+    w12 = w22
+    connectEvents2("AIR WALK \240\159\141\131", w22, executeRemoteScript18, true)
+    w10 = connectEvents2
+    w12 = w22
+    connectEvents2("Aura\226\153\128\239\184\143", w22, executeRemoteScript19, true)
+    w10 = connectEvents2
+    w12 = w22
+    connectEvents2("HIDE BUTTONS \240\159\148\152", w22, executeRemoteScript20, true)
+    w10 = connectEvents2
+    w12 = w22
+    connectEvents2("\240\159\165\183 Copy Ninja", w22, executeRemoteScript21, true)
+    w10 = connectEvents2
+    w12 = w22
+    connectEvents2("\240\159\170\147 Sky Destroyer", w22, executeRemoteScript22, true)
+    w10 = connectEvents2
+    w12 = w22
+    connectEvents2("\240\159\142\173 Emote Name", w22, runProtected2, true)
+    w10 = connectEvents2
+    w12 = w22
+    connectEvents2("EA EMOTE\240\159\145\164", w22, executeRemoteScript23, true)
+    w10 = connectEvents2
+    w12 = w22
+    connectEvents2("\240\159\148\132 Rejoin", w22, performTask2, true)
+    w10 = connectEvents2
+    w12 = w23
+    connectEvents2("\240\159\146\1280 DELAY MULTI BANG", w23, executeRemoteScript24, true)
+    w10 = connectEvents2
+    w12 = w23
+    connectEvents2("\226\154\148\239\184\143 EA BANG PANEL\240\159\146\162", w23, executeRemoteScript25, true)
+    w10 = connectEvents2
+    w12 = w23
+    connectEvents2("\240\159\148\165MULTIBANG", w23, executeRemoteScript26, true)
+    w10 = connectEvents2
+    w12 = w23
+    connectEvents2("\226\154\161ANTIBANG PANEL", w23, executeRemoteScript27, true)
+    w10 = nil
+    w12 = connectEvents4
+    connectEvents4("1", "139435437308948")
+    w12 = connectEvents4
+    connectEvents4("2", "137787889626447")
+    w12 = connectEvents4
+    connectEvents4("3", "138864288968383")
+    w12 = connectEvents4
+    connectEvents4("4", "130973511966646")
+    w12 = connectEvents4
+    connectEvents4("5", "135674024616225")
+    w12 = connectEvents4
+    connectEvents4("6", "137152491110539")
+    w12 = connectEvents4
+    connectEvents4("7", "139606677237480")
+    w12 = connectEvents4
+    connectEvents4("8", "139825057894568")
+    w12 = connectEvents4
+    connectEvents4("9", "140292910030604")
+    w12 = connectEvents4
+    connectEvents4("10", "137466127206691")
+    w12 = connectEvents4
+    connectEvents4("11", "139638751795258")
+    w12 = Instance.new("TextLabel", w11)
+    w12.Size = UDim2.new(1, 0, 1, 0)
+    w12.BackgroundTransparency = 1
+    w12.TextColor3 = v15
+    w12.TextSize = 8.5
+    w12.Font = Enum.Font.Code
+    w12.TextXAlignment = Enum.TextXAlignment.Left
+    w12.TextYAlignment = Enum.TextYAlignment.Top
+    v10.Heartbeat:Connect(onHeartbeat)
+    local imageButton = Instance.new("ImageButton", v2)
+    imageButton.Size = UDim2.new(0, 50, 0, 50)
+    imageButton.Position = UDim2.new(0, 10, 0.5, -25)
+    imageButton.BackgroundTransparency = 1
+    imageButton.Image = "rbxassetid://129299711445020"
+    v17(imageButton)
+    imageButton.MouseButton1Click:Connect(onMouseButton1Click4)
+    return w14, w15, w13, w2, w16, unpack, frame2, w3, uIListLayout, w1, createScrollingFrame, w17, w18, w19, w20, w21, w22, w9, w23, w11, false, connectEvents, connectEvents2, imageLabel2, frame3, uIStroke2, textLabel3, w5, textLabel4, frame4, uIStroke3, textLabel5, w6, textLabel6, imageLabel3, textLabel7, w7, w8, nil, connectEvents4, w12, imageButton
+end
+local v18, frame, v19, v20
+local function onMouseButton1Click6(...)
+    local function backgroundTask(...)
+        local function executeRemoteScript()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/THEBESTLEADERSHIP/ENDLESS-AURA-TAG/refs/heads/main/ENDLESS%20AURA%20TAG"))
+        end
+        pcall(executeRemoteScript)
+        v20(select(2, ...))
+    end
+    if v19.Text == "EA" then
+        v6("107406973902030")
+        v18(select(2, ...))
+        if frame then
+            frame:Destroy()
+        end
+        task.spawn(backgroundTask)
+    else
+        v6("107406973902030")
+        v19.Text = ""
+        v19.PlaceholderText = "WRONG KEY \240\159\152\130 ATUL PAPA SE MANG"
+    end
+end
+v5 = "Players"
+v10 = game
+players = game:GetService("Players")
+v1 = "RunService"
+v5 = game
+v10 = game:GetService("RunService")
+v3 = "UserInputService"
+v1 = game
+v5 = game:GetService("UserInputService")
+v11 = "CoreGui"
+v3 = game
+v1 = game:GetService("CoreGui")
+v4 = "ReplicatedStorage"
+v11 = game
+v3 = game:GetService("ReplicatedStorage")
+v12 = "TeleportService"
+v4 = game
+v11 = game:GetService("TeleportService")
+v13 = "TextChatService"
+v12 = game
+v4 = game:GetService("TextChatService")
+v12 = players.LocalPlayer
+v2 = _G.AdminLogs
+v13 = not v2
+if v13 then
+    v13 = _G
+    local v22 = {}
+    v2 = v22
+    _G.AdminLogs = v22
+end
+v2 = 0
+v13 = Vector3.new(0, 50, 0)
+v2 = v1:FindFirstChild("EndlessAura_Final")
+local v21
+if v2 then
+    v2 = v1.EndlessAura_Final
+    v21 = v2
+    v2 = v2.Destroy
+    v2(v21)
+end
+v2 = Instance.new("ScreenGui")
+v2.Name = "EndlessAura_Final"
+v2.ResetOnSpawn = false
+v7 = not pcall(tryOperation6)
+if not v7 then
+    v14 = v2.Parent
+    v7 = not v14
+end
+if v7 then
+    v8 = "PlayerGui"
+    v14 = v12
+    v7 = v12:WaitForChild("PlayerGui")
+    v2.Parent = v7
+end
+v14 = 150
+v8 = 0
+v15 = 0
+v7 = Color3.fromRGB(150, 0, 0)
+v6 = 0
+v18 = 0
+v17 = 0
+v14 = Color3.fromRGB(0, 0, 0)
+v6 = 255
+v18 = 255
+v17 = 255
+v8 = Color3.fromRGB(255, 255, 255)
+v16 = 0
+v6 = 255
+v18 = 0
+v15 = Color3.fromRGB(0, 255, 0)
+v16 = transformValue5
+v6 = runProtected3
+v18 = runProtected4
+v17 = connectEvents5
+frame = Instance.new("Frame", v2)
+frame.Size = UDim2.new(0, 340, 0, 440)
+frame.Position = UDim2.new(0.5, -170, 0.5, -220)
+frame.BackgroundColor3 = v14
+frame.BackgroundTransparency = 0.2
+v17(frame)
+Instance.new("UICorner", frame)
+local uIStroke = Instance.new("UIStroke", frame)
+uIStroke.Thickness = 3
+uIStroke.Color = v7
+local imageLabel = Instance.new("ImageLabel", frame)
+v9 = 0
+v19 = 40
+imageLabel.Size = UDim2.new(0, 40, 0, 40)
+v9 = 0
+v19 = 10
+imageLabel.Position = UDim2.new(0.5, -20, 0, 10)
+imageLabel.BackgroundTransparency = 1
+imageLabel.Image = "rbxassetid://129299711445020"
+local textButton = Instance.new("TextButton", frame)
+v9 = 25
+v19 = 0
+textButton.Size = UDim2.new(0, 25, 0, 25)
+v9 = -30
+v19 = 0
+textButton.Position = UDim2.new(1, -30, 0, 5)
+textButton.Text = "X"
+textButton.BackgroundColor3 = v7
+textButton.TextColor3 = v8
+v9 = textButton
+Instance.new("UICorner", textButton)
+v9 = onMouseButton1Click5
+textButton.MouseButton1Click:Connect(onMouseButton1Click5)
+v9 = frame
+local textLabel = Instance.new("TextLabel", frame)
+textLabel.Text = "ENDLESS AURA"
+v9 = 1
+v19 = 0
+v20 = 40
+textLabel.Size = UDim2.new(1, 0, 0, 40)
+v9 = 0
+v19 = 0
+v20 = 50
+textLabel.Position = UDim2.new(0, 0, 0, 50)
+textLabel.TextColor3 = v7
+textLabel.TextSize = 22
+v9 = Enum.Font
+textLabel.Font = v9.GothamBlack
+textLabel.BackgroundTransparency = 1
+v9 = "TextLabel"
+v19 = frame
+local textLabel2 = Instance.new("TextLabel", frame)
+textLabel2.Text = "SCRIPT BY ATUL \240\159\146\128\n\nKEY CHAIYE TO ATUL SE MANG\nKISMAT HOGI TO DEDEGA \240\159\152\130"
+v19 = 0
+v20 = 0
+textLabel2.Position = UDim2.new(0, 0, 0, 95)
+v19 = 1
+v20 = 0
+v9 = UDim2.new(1, 0, 0, 60)
+textLabel2.Size = v9
+textLabel2.TextColor3 = v8
+textLabel2.TextSize = 12
+textLabel2.BackgroundTransparency = 1
+v19 = "TextLabel"
+v9 = Instance.new("TextLabel", frame)
+v9.Text = "ROBLOX ID - ff_player1109\nFOLLOW KARLO WRNA ID BAN \240\159\146\128"
+v20 = 0
+v9.Position = UDim2.new(0, 0, 0, 165)
+v20 = 0
+v19 = UDim2.new(1, 0, 0, 40)
+v9.Size = v19
+v9.TextColor3 = v8
+v9.TextSize = 13
+v20 = Enum
+v9.Font = Enum.Font.GothamBold
+v9.BackgroundTransparency = 1
+v19 = task.spawn
+v19(processItems10)
+v20 = frame
+v19 = Instance.new("TextBox", frame)
+v20 = 0
+v19.Size = UDim2.new(0, 240, 0, 45)
+v20 = 0.5
+v19.Position = UDim2.new(0.5, -120, 0, 230)
+v20 = 20
+v19.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+v19.PlaceholderText = "KEY DALO..."
+v19.TextColor3 = v7
+v19.Font = Enum.Font.GothamBold
+v20 = "UICorner"
+Instance.new("UICorner", v19)
+v20 = "TextButton"
+local textButton2 = Instance.new("TextButton", frame)
+textButton2.Size = UDim2.new(0, 140, 0, 45)
+v20 = UDim2.new(0.5, -70, 0, 310)
+textButton2.Position = v20
+textButton2.BackgroundColor3 = v8
+textButton2.Text = "VERIFY"
+textButton2.TextColor3 = v14
+textButton2.Font = Enum.Font.GothamBold
+v20 = Instance.new
+v20("UICorner", textButton2)
+v20 = connectEvents6
+textButton2.MouseButton1Click:Connect(onMouseButton1Click6)
+
+-- https://discord.gg/AwGHNh7Z7T
